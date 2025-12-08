@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lora&display=swap');
+
+// Variables based on Figma file
+$font-sans-serif: Inter, 'Helvetica Neue', sans-serif;
+$font-serif: 'Lora', 'Palatino', serif;
+$color-luxe-gray: #393A3F;
+$color-luxe-gray-light: #797B86;
+$color-white: #FFF;
+
+:root {
+  font-family: $font-sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: $color-luxe-gray;
+  color: $color-white;
+}
+
+h1 {
+  font-family: $font-serif;
+}
+
+a {
+  color: $color-white;
+}
