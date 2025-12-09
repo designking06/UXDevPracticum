@@ -37,12 +37,16 @@ a {
 
 .header {
   margin: auto;
-  max-width: 390px;
+  max-width: 24rem;
   padding: 2.5rem 1rem;
   text-align: center;
 
   @media screen and (min-width: 576px) {
-    max-width: 703px;
+    max-width: 35rem;
+  }
+  
+  @media screen and (min-width: 910px) {
+    max-width: 40rem;
   }
 
   h1,
@@ -197,9 +201,9 @@ a {
     h4 {
       font-weight: 200;
       margin-top: 2px;
-
-      @media screen and (min-width: 577px) {
-        font-size: .8rem;
+      font-size: .8rem;
+      @media screen and (min-width: 910px) {
+        font-size: 1rem;
       }
 
       @media screen and (min-width: 1511px) {
@@ -208,8 +212,9 @@ a {
     }
 
     p {
-      @media screen and (min-width: 577px) {
-        font-size: .5rem;
+      font-size: .5rem;
+      @media screen and (min-width: 910px) {
+        font-size: .7rem;
       }
 
       @media screen and (min-width: 1511px) {
@@ -335,8 +340,9 @@ a {
   text-align: center;
   font-size: 18px;
 
-  @media screen and (min-width: 577px) {
+  @media screen and (min-width: 576px) {
     font-size: 20px;
+    max-width: 30rem;
   }
 }
 
