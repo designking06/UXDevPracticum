@@ -27,10 +27,13 @@ body {
   padding: 0;
 }
 
-h1 {
+h1, h4 {
   font-family: $font-serif;
 }
 
+p {
+  font-family: $font-sans-serif;
+}
 a {
   color: $color-white;
 }
@@ -185,13 +188,27 @@ a {
 
   img {
     height: 100%;
+    margin: auto;
     width: 100%;
     object-fit: cover;
+    @media screen and (min-width: 910px) {
+      padding: 0 1.5rem;
+      width: 95%;
+    }
   }
 
   .desktop-summary {
     position: absolute;
-
+    .container--right {
+      text-align: left;
+      position: absolute;
+      right: 0;
+    }
+    .container--left {
+      text-align: left;
+      position: absolute;
+      left: 0;
+    }
     h4,
     p {
       margin: 0;
@@ -203,7 +220,7 @@ a {
       margin-top: 2px;
       font-size: .8rem;
       @media screen and (min-width: 910px) {
-        font-size: 1rem;
+        font-size: 1.5rem;
       }
 
       @media screen and (min-width: 1511px) {
@@ -313,14 +330,13 @@ a {
   }
 
   .summary-5 {
-    width: 20%;
+    width: 24%;
     top: 84%;
-    left: 26%;
+    left: 27%;
 
     .line {
-      right: 20%;
       height: .06rem;
-      width: 100%;
+      width: 60%;
 
       &::after {
         right: 0;
@@ -347,20 +363,27 @@ a {
 }
 
 #footer-images {
+  /* This margin-bottom will now work correctly */
+  margin-bottom: 30px;
   width: 100%;
-  margin-bottom: 50px;
+  /* Remove explicit height if you want it to wrap content automatically */
+  /* height: auto; */
+}
 
-  img {
-    width: 49%;
-    gap: 10px;
-    position: absolute;
-  }
+#footer-images .container {
+  margin: auto;
+  width: 100%;
+  /* Use Flexbox for layout */
+  display: flex;
+  justify-content: space-between; /* Puts space between the two images */
+  gap: 15px; /* Modern way to add space between flex items */
 
-  .left {
-    left: 0;
+  @media screen and (min-width: 910px) {
+    width: 95%;
+    padding: 0 1.5rem; /* Add padding for wider screens */
   }
+}
 
-  .right {
-    right: 0;
-  }
+#footer-images img {
+  width: 100%;
 }
