@@ -19,6 +19,10 @@ $color-white: #FFF;
   -webkit-text-size-adjust: 100%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
   background-color: $color-luxe-gray;
   color: $color-white;
