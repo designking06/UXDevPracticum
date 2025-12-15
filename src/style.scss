@@ -363,24 +363,20 @@ a {
 }
 
 #footer-images {
-  /* This margin-bottom will now work correctly */
   margin-bottom: 30px;
   width: 100%;
-  /* Remove explicit height if you want it to wrap content automatically */
-  /* height: auto; */
 }
 
 #footer-images .container {
   margin: auto;
   width: 100%;
-  /* Use Flexbox for layout */
   display: flex;
-  justify-content: space-between; /* Puts space between the two images */
-  gap: 15px; /* Modern way to add space between flex items */
+  justify-content: space-between;
+  gap: 15px;
 
   @media screen and (min-width: 910px) {
     width: 95%;
-    padding: 0 1.5rem; /* Add padding for wider screens */
+    padding: 0 1.5rem;
   }
 }
 
